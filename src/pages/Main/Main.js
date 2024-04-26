@@ -35,12 +35,8 @@ const Main = () => {
   return (
     <View style={styles.page}>
       <View style={styles.header}>
-        {listData.length !== 0 && (
-          <React.Fragment>
-            <HeaderTotal data={listData} tipe="pemasukan" color="green" />
-            <HeaderTotal data={listData} tipe="pengeluaran" color="red" />
-          </React.Fragment>
-        )}
+        <HeaderTotal data={listData} tipe="pemasukan" color="green" />
+        <HeaderTotal data={listData} tipe="pengeluaran" color="red" />
       </View>
       <View>
         <Button

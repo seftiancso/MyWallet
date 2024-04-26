@@ -11,7 +11,9 @@ const HeaderTotal = props => {
   return (
     <View style={styles.wrapper(color)}>
       <View>
-        <Text style={styles.title}>Pemasukan</Text>
+        <Text style={styles.title}>
+          {tipe === 'pemasukan' ? 'Pemasukan' : 'Pengeluaran'}
+        </Text>
         <Text style={styles.balance}>
           {currencyParser(countTotal(data, tipe))}
         </Text>
